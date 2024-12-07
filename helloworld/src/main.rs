@@ -1,14 +1,31 @@
+use std::io;
 fn main() {
 
-    // Tuple
-    let human: (String, i32, bool) = ("Atan".to_string(), 30, false);
-    println!("Human Tuple: {:?}", human);
+    hello_world();
+    human_id("Atan", 40, 170.0);
+    let value: i32 = add(4, 6);
 
-    let animal_slices: &[&str] = &["Lion","Snake","Crocodiles"];
-    println!("Animal Slice: {:?}", animal_slices);
-
-    let mut stone_cold: String = String::from("Hell, ");
-    stone_cold.push_str("Yeah!");   
-    println!("Stone Cold Says: {}", stone_cold);
+    println!("Add value is: {}", value)
 }
+
+fn hello_world() {
+    println!("Hello, Rust!");
+}
+
+fn human_id(name: &str, age: u32, height: f32){
+    println!("Name: {}", name);
+    println!("Age: {}", age);
+    println!("Height: {} cm", height);
+}
+
+// function returning values
+fn add (a: i32, b: i32) -> i32 {
+    a + b
+    // anything without semicolon (;) is a returning value
+}
+
+// fn BMI () {
+
+// }
+
 
