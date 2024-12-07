@@ -11,4 +11,3 @@ fn main() {
     stone_cold.push_str("Yeah!");   
     println!("Stone Cold Says: {}", stone_cold);
 }
-
