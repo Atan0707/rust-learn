@@ -1,6 +1,6 @@
 # rust-learn
 
-Learning rust everyday until I become a gigachad.
+Learning rust everyday until I become a gigachad (probably).
 
 ## How to use
 
